@@ -31,10 +31,6 @@ async function main() {
   await mongoose.connect(dbUrl);
 }
 
-app.get("/", (req, res) => {
-  res.send("Hi i am root");
-});
-
 // show details
 app.get("/details", async (req, res) => {
   const allDetails = await Detail.find({});
