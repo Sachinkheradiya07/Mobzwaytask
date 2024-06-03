@@ -5,10 +5,12 @@ const detailsSchema = new Schema({
   firstName: {
     type: String,
     required: true,
+    match: /^[a-zA-Z]+$/,
   },
   lastName: {
     type: String,
     required: true,
+    match: /^[a-zA-Z]+$/,
   },
   mobileNo: {
     type: Number,
@@ -28,19 +30,23 @@ const detailsSchema = new Schema({
     city: {
       type: String,
       required: true,
+      match: /^[a-zA-Z]+$/,
     },
     state: {
       type: String,
       required: true,
+      match: /^[a-zA-Z]+$/,
     },
     country: {
       type: String,
       required: true,
+      match: /^[a-zA-Z]+$/,
     },
   },
   loginId: {
     type: String,
     required: true,
+    match: /^[a-zA-Z0-9]+$/,
   },
   password: {
     type: String,
